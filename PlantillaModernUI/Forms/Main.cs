@@ -8,6 +8,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Web;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
 using Forms.MenuForms;
@@ -16,12 +17,14 @@ namespace Forms
 {
     public partial class Main : Form
     {
-        //Fields
+        #region Fields
         private IconButton currentBtn;
         private Panel leftBorderBtn;
         private Form currentChildForm;
 
-        //Constructor
+        #endregion
+
+        #region Constructor
         public Main()
         {
             InitializeComponent();
@@ -29,9 +32,11 @@ namespace Forms
             leftBorderBtn.Size = new Size(7, 40);
             panelMenu.Controls.Add(leftBorderBtn);
             OpenChildForm(new Login());
-
         }
 
+        #endregion
+
+        #region RGBColors
         private struct RGBColors
         {
             public static Color color1 = Color.FromArgb(172, 126, 241);
@@ -49,7 +54,9 @@ namespace Forms
             public static Color color13 = Color.FromArgb(45, 114, 244);
         }
 
-        //Methods
+        #endregion
+
+        #region Methods
         private void ActivateButton(object senderBtn, Color color)
         {
             if (senderBtn != null)
@@ -119,14 +126,11 @@ namespace Forms
             lblTitleChildForm.Text = childForm.Text;
         }
 
-        private void pbHome_Click(object sender, EventArgs e)
-        {
-            currentChildForm.Close();
-            Reset();
-        }
+        #endregion      
 
-        //DragForm
+        #region DragForm
 
+        //Mover la ventana del formulario con el clic en el panel top
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
 
@@ -138,6 +142,15 @@ namespace Forms
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
+        #endregion
+
+        #region Clicks Events
+        private void pbHome_Click(object sender, EventArgs e)
+        {
+            currentChildForm.Close();
+            Reset();
+        }
+
         private void btnClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -147,7 +160,6 @@ namespace Forms
         {
             WindowState = FormWindowState.Minimized;
         }
-
 
         int LX, LY;
         private void btnMaximize_Click(object sender, EventArgs e)
@@ -324,5 +336,7 @@ namespace Forms
                 btnConfiguracion.Text = "Configuracion";
             }
         }
+
+        #endregion
     }
 }
