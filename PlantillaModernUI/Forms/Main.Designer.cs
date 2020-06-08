@@ -48,11 +48,18 @@
             this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.panelShadow = new System.Windows.Forms.Panel();
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.chbDashboard = new System.Windows.Forms.CheckBox();
+            this.chbOrders = new System.Windows.Forms.CheckBox();
+            this.chbProducts = new System.Windows.Forms.CheckBox();
+            this.chbCustomers = new System.Windows.Forms.CheckBox();
+            this.chbMarketing = new System.Windows.Forms.CheckBox();
+            this.btnEnviar = new FontAwesome.Sharp.IconButton();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbHome)).BeginInit();
             this.panelTitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).BeginInit();
+            this.panelDesktop.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -115,6 +122,7 @@
             this.iconButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton5.UseVisualStyleBackColor = true;
+            this.iconButton5.Visible = false;
             this.iconButton5.Click += new System.EventHandler(this.iconButton5_Click);
             // 
             // iconButton4
@@ -138,6 +146,7 @@
             this.iconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton4.UseVisualStyleBackColor = true;
+            this.iconButton4.Visible = false;
             this.iconButton4.Click += new System.EventHandler(this.iconButton4_Click);
             // 
             // iconButton3
@@ -161,6 +170,7 @@
             this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton3.UseVisualStyleBackColor = true;
+            this.iconButton3.Visible = false;
             this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
             // 
             // iconButton2
@@ -184,6 +194,7 @@
             this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton2.UseVisualStyleBackColor = true;
+            this.iconButton2.Visible = false;
             this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
             // 
             // iconButton1
@@ -207,6 +218,7 @@
             this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.Visible = false;
             this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // panelLogo
@@ -221,6 +233,7 @@
             // 
             // btnBars
             // 
+            this.btnBars.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBars.FlatAppearance.BorderSize = 0;
             this.btnBars.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBars.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
@@ -234,6 +247,7 @@
             this.btnBars.Size = new System.Drawing.Size(34, 35);
             this.btnBars.TabIndex = 1;
             this.btnBars.UseVisualStyleBackColor = true;
+            this.btnBars.Click += new System.EventHandler(this.btnBars_Click);
             // 
             // pbHome
             // 
@@ -258,12 +272,13 @@
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitleBar.Location = new System.Drawing.Point(200, 0);
             this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(600, 80);
+            this.panelTitleBar.Size = new System.Drawing.Size(600, 47);
             this.panelTitleBar.TabIndex = 1;
             this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
             // btnRestore
             // 
+            this.btnRestore.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRestore.FlatAppearance.BorderSize = 0;
             this.btnRestore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRestore.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
@@ -271,15 +286,18 @@
             this.btnRestore.IconChar = FontAwesome.Sharp.IconChar.WindowRestore;
             this.btnRestore.IconColor = System.Drawing.Color.Gainsboro;
             this.btnRestore.IconSize = 25;
-            this.btnRestore.Location = new System.Drawing.Point(445, 12);
+            this.btnRestore.Location = new System.Drawing.Point(520, 9);
             this.btnRestore.Name = "btnRestore";
             this.btnRestore.Rotation = 0D;
             this.btnRestore.Size = new System.Drawing.Size(34, 29);
             this.btnRestore.TabIndex = 6;
             this.btnRestore.UseVisualStyleBackColor = true;
+            this.btnRestore.Visible = false;
+            this.btnRestore.Click += new System.EventHandler(this.btnRestore_Click);
             // 
             // btnMinimize
             // 
+            this.btnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMinimize.FlatAppearance.BorderSize = 0;
             this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinimize.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
@@ -287,15 +305,17 @@
             this.btnMinimize.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
             this.btnMinimize.IconColor = System.Drawing.Color.Gainsboro;
             this.btnMinimize.IconSize = 25;
-            this.btnMinimize.Location = new System.Drawing.Point(485, 12);
+            this.btnMinimize.Location = new System.Drawing.Point(480, 9);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Rotation = 0D;
             this.btnMinimize.Size = new System.Drawing.Size(34, 29);
             this.btnMinimize.TabIndex = 5;
             this.btnMinimize.UseVisualStyleBackColor = true;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
             // btnMaximize
             // 
+            this.btnMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMaximize.FlatAppearance.BorderSize = 0;
             this.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMaximize.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
@@ -303,15 +323,17 @@
             this.btnMaximize.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
             this.btnMaximize.IconColor = System.Drawing.Color.Gainsboro;
             this.btnMaximize.IconSize = 25;
-            this.btnMaximize.Location = new System.Drawing.Point(525, 12);
+            this.btnMaximize.Location = new System.Drawing.Point(520, 9);
             this.btnMaximize.Name = "btnMaximize";
             this.btnMaximize.Rotation = 0D;
             this.btnMaximize.Size = new System.Drawing.Size(34, 29);
             this.btnMaximize.TabIndex = 4;
             this.btnMaximize.UseVisualStyleBackColor = true;
+            this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
             // 
             // btnClose
             // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
@@ -319,18 +341,19 @@
             this.btnClose.IconChar = FontAwesome.Sharp.IconChar.WindowClose;
             this.btnClose.IconColor = System.Drawing.Color.Gainsboro;
             this.btnClose.IconSize = 25;
-            this.btnClose.Location = new System.Drawing.Point(565, 12);
+            this.btnClose.Location = new System.Drawing.Point(560, 9);
             this.btnClose.Name = "btnClose";
             this.btnClose.Rotation = 0D;
             this.btnClose.Size = new System.Drawing.Size(31, 29);
             this.btnClose.TabIndex = 2;
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // lblTitleChildForm
             // 
             this.lblTitleChildForm.AutoSize = true;
             this.lblTitleChildForm.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblTitleChildForm.Location = new System.Drawing.Point(44, 39);
+            this.lblTitleChildForm.Location = new System.Drawing.Point(41, 18);
             this.lblTitleChildForm.Name = "lblTitleChildForm";
             this.lblTitleChildForm.Size = new System.Drawing.Size(35, 13);
             this.lblTitleChildForm.TabIndex = 3;
@@ -342,7 +365,7 @@
             this.iconCurrentChildForm.ForeColor = System.Drawing.Color.MediumPurple;
             this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
             this.iconCurrentChildForm.IconColor = System.Drawing.Color.MediumPurple;
-            this.iconCurrentChildForm.Location = new System.Drawing.Point(6, 30);
+            this.iconCurrentChildForm.Location = new System.Drawing.Point(3, 9);
             this.iconCurrentChildForm.Name = "iconCurrentChildForm";
             this.iconCurrentChildForm.Size = new System.Drawing.Size(32, 32);
             this.iconCurrentChildForm.TabIndex = 2;
@@ -352,19 +375,100 @@
             // 
             this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(24)))), ((int)(((byte)(58)))));
             this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelShadow.Location = new System.Drawing.Point(200, 80);
+            this.panelShadow.Location = new System.Drawing.Point(200, 47);
             this.panelShadow.Name = "panelShadow";
-            this.panelShadow.Size = new System.Drawing.Size(600, 9);
+            this.panelShadow.Size = new System.Drawing.Size(600, 33);
             this.panelShadow.TabIndex = 4;
             // 
             // panelDesktop
             // 
-            this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panelDesktop.BackColor = System.Drawing.Color.White;
+            this.panelDesktop.Controls.Add(this.btnEnviar);
+            this.panelDesktop.Controls.Add(this.chbMarketing);
+            this.panelDesktop.Controls.Add(this.chbCustomers);
+            this.panelDesktop.Controls.Add(this.chbProducts);
+            this.panelDesktop.Controls.Add(this.chbOrders);
+            this.panelDesktop.Controls.Add(this.chbDashboard);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Location = new System.Drawing.Point(200, 89);
+            this.panelDesktop.Location = new System.Drawing.Point(200, 80);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(600, 503);
+            this.panelDesktop.Size = new System.Drawing.Size(600, 512);
             this.panelDesktop.TabIndex = 5;
+            // 
+            // chbDashboard
+            // 
+            this.chbDashboard.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.chbDashboard.AutoSize = true;
+            this.chbDashboard.Location = new System.Drawing.Point(180, 133);
+            this.chbDashboard.Name = "chbDashboard";
+            this.chbDashboard.Size = new System.Drawing.Size(78, 17);
+            this.chbDashboard.TabIndex = 0;
+            this.chbDashboard.Text = "Dashboard";
+            this.chbDashboard.UseVisualStyleBackColor = true;
+            // 
+            // chbOrders
+            // 
+            this.chbOrders.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.chbOrders.AutoSize = true;
+            this.chbOrders.Location = new System.Drawing.Point(276, 133);
+            this.chbOrders.Name = "chbOrders";
+            this.chbOrders.Size = new System.Drawing.Size(54, 17);
+            this.chbOrders.TabIndex = 1;
+            this.chbOrders.Text = "Oders";
+            this.chbOrders.UseVisualStyleBackColor = true;
+            // 
+            // chbProducts
+            // 
+            this.chbProducts.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.chbProducts.AutoSize = true;
+            this.chbProducts.Location = new System.Drawing.Point(379, 133);
+            this.chbProducts.Name = "chbProducts";
+            this.chbProducts.Size = new System.Drawing.Size(68, 17);
+            this.chbProducts.TabIndex = 2;
+            this.chbProducts.Text = "Products";
+            this.chbProducts.UseVisualStyleBackColor = true;
+            // 
+            // chbCustomers
+            // 
+            this.chbCustomers.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.chbCustomers.AutoSize = true;
+            this.chbCustomers.Location = new System.Drawing.Point(180, 202);
+            this.chbCustomers.Name = "chbCustomers";
+            this.chbCustomers.Size = new System.Drawing.Size(75, 17);
+            this.chbCustomers.TabIndex = 3;
+            this.chbCustomers.Text = "Customers";
+            this.chbCustomers.UseVisualStyleBackColor = true;
+            // 
+            // chbMarketing
+            // 
+            this.chbMarketing.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.chbMarketing.AutoSize = true;
+            this.chbMarketing.Location = new System.Drawing.Point(276, 202);
+            this.chbMarketing.Name = "chbMarketing";
+            this.chbMarketing.Size = new System.Drawing.Size(73, 17);
+            this.chbMarketing.TabIndex = 4;
+            this.chbMarketing.Text = "Marketing";
+            this.chbMarketing.UseVisualStyleBackColor = true;
+            // 
+            // btnEnviar
+            // 
+            this.btnEnviar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnEnviar.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnEnviar.FlatAppearance.BorderSize = 0;
+            this.btnEnviar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEnviar.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnEnviar.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEnviar.ForeColor = System.Drawing.Color.Gray;
+            this.btnEnviar.IconChar = FontAwesome.Sharp.IconChar.Play;
+            this.btnEnviar.IconColor = System.Drawing.Color.White;
+            this.btnEnviar.IconSize = 25;
+            this.btnEnviar.Location = new System.Drawing.Point(276, 240);
+            this.btnEnviar.Name = "btnEnviar";
+            this.btnEnviar.Rotation = 0D;
+            this.btnEnviar.Size = new System.Drawing.Size(54, 29);
+            this.btnEnviar.TabIndex = 6;
+            this.btnEnviar.UseVisualStyleBackColor = false;
+            this.btnEnviar.Click += new System.EventHandler(this.btnEnviar_Click);
             // 
             // Main
             // 
@@ -385,6 +489,8 @@
             this.panelTitleBar.ResumeLayout(false);
             this.panelTitleBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).EndInit();
+            this.panelDesktop.ResumeLayout(false);
+            this.panelDesktop.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -410,6 +516,11 @@
         private FontAwesome.Sharp.IconButton btnMinimize;
         private FontAwesome.Sharp.IconButton btnMaximize;
         private FontAwesome.Sharp.IconButton btnClose;
+        private System.Windows.Forms.CheckBox chbMarketing;
+        private System.Windows.Forms.CheckBox chbCustomers;
+        private System.Windows.Forms.CheckBox chbProducts;
+        private System.Windows.Forms.CheckBox chbOrders;
+        private System.Windows.Forms.CheckBox chbDashboard;
+        private FontAwesome.Sharp.IconButton btnEnviar;
     }
 }
-

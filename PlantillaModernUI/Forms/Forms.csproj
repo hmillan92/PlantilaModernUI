@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MenuForms\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForms\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +99,27 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MenuForms\FormCustomers.resx">
+      <DependentUpon>FormCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForms\FormDashboard.resx">
+      <DependentUpon>FormDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForms\FormMarketing.resx">
+      <DependentUpon>FormMarketing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForms\FormOrders.resx">
+      <DependentUpon>FormOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForms\FormProducts.resx">
+      <DependentUpon>FormProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForms\FormSettings.resx">
+      <DependentUpon>FormSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForms\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
@@ -120,5 +147,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <Content Include="Images\borde.jpg" />
+    <Content Include="Images\LOGO_MENU.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
