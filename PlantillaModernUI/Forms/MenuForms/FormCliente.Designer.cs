@@ -1,6 +1,6 @@
 ﻿namespace Forms.MenuForms
 {
-    partial class FormCustomers
+    partial class FormCliente
     {
         /// <summary>
         /// Required designer variable.
@@ -38,12 +38,12 @@
             this.label1.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(305, 151);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 26);
+            this.label1.Size = new System.Drawing.Size(85, 26);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Customers";
+            this.label1.Text = "Clientes";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // FormCustomers
+            // FormCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -51,8 +51,8 @@
             this.ClientSize = new System.Drawing.Size(749, 342);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormCustomers";
-            this.Text = "Customers";
+            this.Name = "FormCliente";
+            this.Text = "Clientes";
             this.ResumeLayout(false);
             this.PerformLayout();
 

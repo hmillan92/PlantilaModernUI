@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Forms.MenuForms
 {
-    public partial class FormCustomers : Form
+    public partial class FormContabilidad : Form
     {
-        public FormCustomers()
+        public FormContabilidad()
         {
             InitializeComponent();
         }

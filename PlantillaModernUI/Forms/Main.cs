@@ -26,7 +26,7 @@ namespace Forms
         {
             InitializeComponent();
             leftBorderBtn = new Panel();
-            leftBorderBtn.Size = new Size(7, 60);
+            leftBorderBtn.Size = new Size(7, 40);
             panelMenu.Controls.Add(leftBorderBtn);
             OpenChildForm(new Login());
 
@@ -40,6 +40,13 @@ namespace Forms
             public static Color color4 = Color.FromArgb(95, 77, 221);
             public static Color color5 = Color.FromArgb(249, 88, 155);
             public static Color color6 = Color.FromArgb(24, 161, 251);
+            public static Color color7 = Color.FromArgb(255, 87, 51);
+            public static Color color8 = Color.FromArgb(153, 137, 133);
+            public static Color color9 = Color.FromArgb(192, 201, 247);
+            public static Color color10 = Color.FromArgb(249, 249, 8);
+            public static Color color11 = Color.FromArgb(0, 250, 246);
+            public static Color color12 = Color.FromArgb(250, 0, 42);
+            public static Color color13 = Color.FromArgb(45, 114, 244);
         }
 
         //Methods
@@ -52,10 +59,10 @@ namespace Forms
                 currentBtn = (IconButton)senderBtn;
                 currentBtn.BackColor = Color.FromArgb(37, 36, 81);
                 currentBtn.ForeColor = color;
-              //  currentBtn.TextAlign = ContentAlignment.MiddleCenter;
+                //currentBtn.TextAlign = ContentAlignment.MiddleCenter;
                 currentBtn.IconColor = color;
-               // currentBtn.TextImageRelation = TextImageRelation.TextBeforeImage;
-              //  currentBtn.ImageAlign = ContentAlignment.MiddleRight;
+                //currentBtn.TextImageRelation = TextImageRelation.TextBeforeImage;
+                //currentBtn.ImageAlign = ContentAlignment.MiddleRight;
 
                 //left border button
                 leftBorderBtn.BackColor = color;
@@ -110,41 +117,6 @@ namespace Forms
             childForm.BringToFront();
             childForm.Show();
             lblTitleChildForm.Text = childForm.Text;
-        }
-        private void iconButton1_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new FormDashboard());
-        }
-
-        private void iconButton2_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color2);
-            OpenChildForm(new FormOrders());
-        }
-
-        private void iconButton3_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color3);
-            OpenChildForm(new FormProducts());
-        }
-
-        private void iconButton4_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color4);
-            OpenChildForm(new FormCustomers());
-        }
-
-        private void iconButton5_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color5);
-            OpenChildForm(new FormMarketing());
-        }
-
-        private void iconButton6_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color6);
-            OpenChildForm(new FormSettings());
         }
 
         private void pbHome_Click(object sender, EventArgs e)
@@ -213,11 +185,11 @@ namespace Forms
             checkedList.Add(chbMarketing);
 
             List<Button> button = new List<Button>();
-            button.Add(iconButton1);
-            button.Add(iconButton2);
-            button.Add(iconButton3);
-            button.Add(iconButton4);
-            button.Add(iconButton5);
+            button.Add(btnContabilidad);
+            button.Add(btnVenta);
+            button.Add(btnProducto);
+            button.Add(btnCliente);
+            button.Add(btnVendedor);
 
             int count = 0;
 
@@ -237,10 +209,79 @@ namespace Forms
                     Button a = (Button)button.ElementAt(count);
                     a.Visible = false;
                     count++;
-                }
-                           
-            }
-            
+                }                          
+            }          
+        }
+
+        private void btnContabilidad_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new FormContabilidad());
+        }
+
+        private void btnVenta_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color2);
+            OpenChildForm(new FormVenta());
+        }
+
+        private void btnProducto_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color3);
+            OpenChildForm(new FormProducto());
+        }
+
+        private void btnCliente_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color4);
+            OpenChildForm(new FormCliente());
+        }
+
+        private void btnVendedor_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color5);
+            OpenChildForm(new FormVendedor());
+        }
+
+        private void btnProveedor_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color6);
+            OpenChildForm(new FormProveedor());
+        }
+
+        private void btnAlmacen_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color7);
+        }
+
+        private void btnTransporte_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color8);
+        }
+
+        private void btnBanco_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color9);
+        }
+
+        private void btnCaja_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color10);
+        }
+
+        private void btnListaPrecio_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color11);
+        }
+
+        private void btnDispositivo_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color12);
+        }
+
+        private void btnConfiguracion_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color13);
         }
 
         private void btnBars_Click(object sender, EventArgs e)
@@ -249,24 +290,38 @@ namespace Forms
             {
                 panelMenu.Width = 53;
 
-                iconButton1.Text = String.Empty;
-                iconButton2.Text = String.Empty;
-                iconButton3.Text = String.Empty;
-                iconButton4.Text = String.Empty;
-                iconButton5.Text = String.Empty;
-                iconButton6.Text = String.Empty;
+                btnContabilidad.Text = String.Empty;
+                btnVenta.Text = String.Empty;
+                btnProducto.Text = String.Empty;
+                btnCliente.Text = String.Empty;
+                btnVendedor.Text = String.Empty;
+                btnProveedor.Text = String.Empty;
+                btnAlmacen.Text = String.Empty;
+                btnTransporte.Text = String.Empty;
+                btnBanco.Text = String.Empty;
+                btnCaja.Text = String.Empty;
+                btnListaPrecio.Text = String.Empty;
+                btnDispositivo.Text = String.Empty;
+                btnConfiguracion.Text = String.Empty;
             }
 
             else
             {
                 panelMenu.Width = 200;
 
-                iconButton1.Text = "Dashboard";
-                iconButton2.Text = "Orders";
-                iconButton3.Text = "Products";
-                iconButton4.Text = "Customers";
-                iconButton5.Text = "Marketing";
-                iconButton6.Text = "Settings";
+                btnContabilidad.Text = "Contabilidad";
+                btnVenta.Text = "Venta";
+                btnProducto.Text = "Productos";
+                btnCliente.Text = "Clientes";
+                btnVendedor.Text = "Vendedores";
+                btnProveedor.Text = "Proveedores";
+                btnAlmacen.Text = "Almacenes";
+                btnTransporte.Text = "Transporte";
+                btnBanco.Text = "Banco";
+                btnCaja.Text = "Caja";
+                btnListaPrecio.Text = "Lista de Precios";
+                btnDispositivo.Text = "Dispositivos";
+                btnConfiguracion.Text = "Configuracion";
             }
         }
     }

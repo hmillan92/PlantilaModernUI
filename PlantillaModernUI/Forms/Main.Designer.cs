@@ -30,12 +30,19 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.iconButton6 = new FontAwesome.Sharp.IconButton();
-            this.iconButton5 = new FontAwesome.Sharp.IconButton();
-            this.iconButton4 = new FontAwesome.Sharp.IconButton();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.btnConfiguracion = new FontAwesome.Sharp.IconButton();
+            this.btnDispositivo = new FontAwesome.Sharp.IconButton();
+            this.btnListaPrecio = new FontAwesome.Sharp.IconButton();
+            this.btnCaja = new FontAwesome.Sharp.IconButton();
+            this.btnBanco = new FontAwesome.Sharp.IconButton();
+            this.btnTransporte = new FontAwesome.Sharp.IconButton();
+            this.btnAlmacen = new FontAwesome.Sharp.IconButton();
+            this.btnProveedor = new FontAwesome.Sharp.IconButton();
+            this.btnVendedor = new FontAwesome.Sharp.IconButton();
+            this.btnCliente = new FontAwesome.Sharp.IconButton();
+            this.btnProducto = new FontAwesome.Sharp.IconButton();
+            this.btnVenta = new FontAwesome.Sharp.IconButton();
+            this.btnContabilidad = new FontAwesome.Sharp.IconButton();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.btnBars = new FontAwesome.Sharp.IconButton();
             this.pbHome = new System.Windows.Forms.PictureBox();
@@ -48,12 +55,12 @@
             this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.panelShadow = new System.Windows.Forms.Panel();
             this.panelDesktop = new System.Windows.Forms.Panel();
-            this.chbDashboard = new System.Windows.Forms.CheckBox();
-            this.chbOrders = new System.Windows.Forms.CheckBox();
-            this.chbProducts = new System.Windows.Forms.CheckBox();
-            this.chbCustomers = new System.Windows.Forms.CheckBox();
-            this.chbMarketing = new System.Windows.Forms.CheckBox();
             this.btnEnviar = new FontAwesome.Sharp.IconButton();
+            this.chbMarketing = new System.Windows.Forms.CheckBox();
+            this.chbCustomers = new System.Windows.Forms.CheckBox();
+            this.chbProducts = new System.Windows.Forms.CheckBox();
+            this.chbOrders = new System.Windows.Forms.CheckBox();
+            this.chbDashboard = new System.Windows.Forms.CheckBox();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbHome)).BeginInit();
@@ -65,161 +72,324 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.panelMenu.Controls.Add(this.iconButton6);
-            this.panelMenu.Controls.Add(this.iconButton5);
-            this.panelMenu.Controls.Add(this.iconButton4);
-            this.panelMenu.Controls.Add(this.iconButton3);
-            this.panelMenu.Controls.Add(this.iconButton2);
-            this.panelMenu.Controls.Add(this.iconButton1);
+            this.panelMenu.Controls.Add(this.btnConfiguracion);
+            this.panelMenu.Controls.Add(this.btnDispositivo);
+            this.panelMenu.Controls.Add(this.btnListaPrecio);
+            this.panelMenu.Controls.Add(this.btnCaja);
+            this.panelMenu.Controls.Add(this.btnBanco);
+            this.panelMenu.Controls.Add(this.btnTransporte);
+            this.panelMenu.Controls.Add(this.btnAlmacen);
+            this.panelMenu.Controls.Add(this.btnProveedor);
+            this.panelMenu.Controls.Add(this.btnVendedor);
+            this.panelMenu.Controls.Add(this.btnCliente);
+            this.panelMenu.Controls.Add(this.btnProducto);
+            this.panelMenu.Controls.Add(this.btnVenta);
+            this.panelMenu.Controls.Add(this.btnContabilidad);
             this.panelMenu.Controls.Add(this.panelLogo);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(200, 592);
+            this.panelMenu.Size = new System.Drawing.Size(200, 620);
             this.panelMenu.TabIndex = 0;
             // 
-            // iconButton6
+            // btnConfiguracion
             // 
-            this.iconButton6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton6.FlatAppearance.BorderSize = 0;
-            this.iconButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton6.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconButton6.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.Tools;
-            this.iconButton6.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconButton6.IconSize = 32;
-            this.iconButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton6.Location = new System.Drawing.Point(0, 380);
-            this.iconButton6.Name = "iconButton6";
-            this.iconButton6.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconButton6.Rotation = 0D;
-            this.iconButton6.Size = new System.Drawing.Size(200, 60);
-            this.iconButton6.TabIndex = 6;
-            this.iconButton6.Text = "Settings";
-            this.iconButton6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton6.UseVisualStyleBackColor = true;
-            this.iconButton6.Click += new System.EventHandler(this.iconButton6_Click);
+            this.btnConfiguracion.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnConfiguracion.FlatAppearance.BorderSize = 0;
+            this.btnConfiguracion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConfiguracion.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnConfiguracion.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnConfiguracion.IconChar = FontAwesome.Sharp.IconChar.Tools;
+            this.btnConfiguracion.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnConfiguracion.IconSize = 32;
+            this.btnConfiguracion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConfiguracion.Location = new System.Drawing.Point(0, 560);
+            this.btnConfiguracion.Name = "btnConfiguracion";
+            this.btnConfiguracion.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnConfiguracion.Rotation = 0D;
+            this.btnConfiguracion.Size = new System.Drawing.Size(200, 40);
+            this.btnConfiguracion.TabIndex = 13;
+            this.btnConfiguracion.Text = "Configuracion";
+            this.btnConfiguracion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConfiguracion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnConfiguracion.UseVisualStyleBackColor = true;
+            this.btnConfiguracion.Click += new System.EventHandler(this.btnConfiguracion_Click);
             // 
-            // iconButton5
+            // btnDispositivo
             // 
-            this.iconButton5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton5.FlatAppearance.BorderSize = 0;
-            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton5.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconButton5.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.MailBulk;
-            this.iconButton5.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconButton5.IconSize = 32;
-            this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton5.Location = new System.Drawing.Point(0, 320);
-            this.iconButton5.Name = "iconButton5";
-            this.iconButton5.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconButton5.Rotation = 0D;
-            this.iconButton5.Size = new System.Drawing.Size(200, 60);
-            this.iconButton5.TabIndex = 5;
-            this.iconButton5.Text = "Marketing";
-            this.iconButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton5.UseVisualStyleBackColor = true;
-            this.iconButton5.Visible = false;
-            this.iconButton5.Click += new System.EventHandler(this.iconButton5_Click);
+            this.btnDispositivo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDispositivo.FlatAppearance.BorderSize = 0;
+            this.btnDispositivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDispositivo.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnDispositivo.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnDispositivo.IconChar = FontAwesome.Sharp.IconChar.Laptop;
+            this.btnDispositivo.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnDispositivo.IconSize = 32;
+            this.btnDispositivo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDispositivo.Location = new System.Drawing.Point(0, 520);
+            this.btnDispositivo.Name = "btnDispositivo";
+            this.btnDispositivo.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnDispositivo.Rotation = 0D;
+            this.btnDispositivo.Size = new System.Drawing.Size(200, 40);
+            this.btnDispositivo.TabIndex = 12;
+            this.btnDispositivo.Text = "Dispositivos";
+            this.btnDispositivo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDispositivo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDispositivo.UseVisualStyleBackColor = true;
+            this.btnDispositivo.Click += new System.EventHandler(this.btnDispositivo_Click);
             // 
-            // iconButton4
+            // btnListaPrecio
             // 
-            this.iconButton4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton4.FlatAppearance.BorderSize = 0;
-            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton4.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconButton4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.AddressBook;
-            this.iconButton4.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconButton4.IconSize = 32;
-            this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton4.Location = new System.Drawing.Point(0, 260);
-            this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconButton4.Rotation = 0D;
-            this.iconButton4.Size = new System.Drawing.Size(200, 60);
-            this.iconButton4.TabIndex = 4;
-            this.iconButton4.Text = "Customers";
-            this.iconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton4.UseVisualStyleBackColor = true;
-            this.iconButton4.Visible = false;
-            this.iconButton4.Click += new System.EventHandler(this.iconButton4_Click);
+            this.btnListaPrecio.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnListaPrecio.FlatAppearance.BorderSize = 0;
+            this.btnListaPrecio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnListaPrecio.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnListaPrecio.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnListaPrecio.IconChar = FontAwesome.Sharp.IconChar.List;
+            this.btnListaPrecio.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnListaPrecio.IconSize = 32;
+            this.btnListaPrecio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnListaPrecio.Location = new System.Drawing.Point(0, 480);
+            this.btnListaPrecio.Name = "btnListaPrecio";
+            this.btnListaPrecio.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnListaPrecio.Rotation = 0D;
+            this.btnListaPrecio.Size = new System.Drawing.Size(200, 40);
+            this.btnListaPrecio.TabIndex = 11;
+            this.btnListaPrecio.Text = "Lista de Precios";
+            this.btnListaPrecio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnListaPrecio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnListaPrecio.UseVisualStyleBackColor = true;
+            this.btnListaPrecio.Click += new System.EventHandler(this.btnListaPrecio_Click);
             // 
-            // iconButton3
+            // btnCaja
             // 
-            this.iconButton3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton3.FlatAppearance.BorderSize = 0;
-            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconButton3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Tag;
-            this.iconButton3.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconButton3.IconSize = 32;
-            this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.Location = new System.Drawing.Point(0, 200);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconButton3.Rotation = 0D;
-            this.iconButton3.Size = new System.Drawing.Size(200, 60);
-            this.iconButton3.TabIndex = 3;
-            this.iconButton3.Text = "Products";
-            this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton3.UseVisualStyleBackColor = true;
-            this.iconButton3.Visible = false;
-            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
+            this.btnCaja.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCaja.FlatAppearance.BorderSize = 0;
+            this.btnCaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCaja.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnCaja.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnCaja.IconChar = FontAwesome.Sharp.IconChar.CashRegister;
+            this.btnCaja.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnCaja.IconSize = 32;
+            this.btnCaja.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCaja.Location = new System.Drawing.Point(0, 440);
+            this.btnCaja.Name = "btnCaja";
+            this.btnCaja.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnCaja.Rotation = 0D;
+            this.btnCaja.Size = new System.Drawing.Size(200, 40);
+            this.btnCaja.TabIndex = 10;
+            this.btnCaja.Text = "Caja";
+            this.btnCaja.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCaja.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCaja.UseVisualStyleBackColor = true;
+            this.btnCaja.Click += new System.EventHandler(this.btnCaja_Click);
             // 
-            // iconButton2
+            // btnBanco
             // 
-            this.iconButton2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton2.FlatAppearance.BorderSize = 0;
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconButton2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.ShoppingCart;
-            this.iconButton2.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconButton2.IconSize = 32;
-            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.Location = new System.Drawing.Point(0, 140);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconButton2.Rotation = 0D;
-            this.iconButton2.Size = new System.Drawing.Size(200, 60);
-            this.iconButton2.TabIndex = 2;
-            this.iconButton2.Text = "Orders";
-            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton2.UseVisualStyleBackColor = true;
-            this.iconButton2.Visible = false;
-            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
+            this.btnBanco.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBanco.FlatAppearance.BorderSize = 0;
+            this.btnBanco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBanco.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnBanco.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnBanco.IconChar = FontAwesome.Sharp.IconChar.DollarSign;
+            this.btnBanco.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnBanco.IconSize = 32;
+            this.btnBanco.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBanco.Location = new System.Drawing.Point(0, 400);
+            this.btnBanco.Name = "btnBanco";
+            this.btnBanco.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnBanco.Rotation = 0D;
+            this.btnBanco.Size = new System.Drawing.Size(200, 40);
+            this.btnBanco.TabIndex = 9;
+            this.btnBanco.Text = "Bancos";
+            this.btnBanco.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBanco.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBanco.UseVisualStyleBackColor = true;
+            this.btnBanco.Click += new System.EventHandler(this.btnBanco_Click);
             // 
-            // iconButton1
+            // btnTransporte
             // 
-            this.iconButton1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconButton1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.ChartBar;
-            this.iconButton1.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconButton1.IconSize = 32;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(0, 80);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconButton1.Rotation = 0D;
-            this.iconButton1.Size = new System.Drawing.Size(200, 60);
-            this.iconButton1.TabIndex = 1;
-            this.iconButton1.Text = "Dashboard";
-            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton1.UseVisualStyleBackColor = true;
-            this.iconButton1.Visible = false;
-            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            this.btnTransporte.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTransporte.FlatAppearance.BorderSize = 0;
+            this.btnTransporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTransporte.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnTransporte.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnTransporte.IconChar = FontAwesome.Sharp.IconChar.Truck;
+            this.btnTransporte.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnTransporte.IconSize = 32;
+            this.btnTransporte.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTransporte.Location = new System.Drawing.Point(0, 360);
+            this.btnTransporte.Name = "btnTransporte";
+            this.btnTransporte.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnTransporte.Rotation = 0D;
+            this.btnTransporte.Size = new System.Drawing.Size(200, 40);
+            this.btnTransporte.TabIndex = 8;
+            this.btnTransporte.Text = "Transporte";
+            this.btnTransporte.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTransporte.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnTransporte.UseVisualStyleBackColor = true;
+            this.btnTransporte.Click += new System.EventHandler(this.btnTransporte_Click);
+            // 
+            // btnAlmacen
+            // 
+            this.btnAlmacen.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAlmacen.FlatAppearance.BorderSize = 0;
+            this.btnAlmacen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAlmacen.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnAlmacen.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnAlmacen.IconChar = FontAwesome.Sharp.IconChar.Warehouse;
+            this.btnAlmacen.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnAlmacen.IconSize = 32;
+            this.btnAlmacen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAlmacen.Location = new System.Drawing.Point(0, 320);
+            this.btnAlmacen.Name = "btnAlmacen";
+            this.btnAlmacen.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnAlmacen.Rotation = 0D;
+            this.btnAlmacen.Size = new System.Drawing.Size(200, 40);
+            this.btnAlmacen.TabIndex = 7;
+            this.btnAlmacen.Text = "Almacenes";
+            this.btnAlmacen.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAlmacen.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAlmacen.UseVisualStyleBackColor = true;
+            this.btnAlmacen.Click += new System.EventHandler(this.btnAlmacen_Click);
+            // 
+            // btnProveedor
+            // 
+            this.btnProveedor.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnProveedor.FlatAppearance.BorderSize = 0;
+            this.btnProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProveedor.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnProveedor.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnProveedor.IconChar = FontAwesome.Sharp.IconChar.Handshake;
+            this.btnProveedor.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnProveedor.IconSize = 32;
+            this.btnProveedor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProveedor.Location = new System.Drawing.Point(0, 280);
+            this.btnProveedor.Name = "btnProveedor";
+            this.btnProveedor.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnProveedor.Rotation = 0D;
+            this.btnProveedor.Size = new System.Drawing.Size(200, 40);
+            this.btnProveedor.TabIndex = 6;
+            this.btnProveedor.Text = "Proveedores";
+            this.btnProveedor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProveedor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnProveedor.UseVisualStyleBackColor = true;
+            this.btnProveedor.Click += new System.EventHandler(this.btnProveedor_Click);
+            // 
+            // btnVendedor
+            // 
+            this.btnVendedor.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnVendedor.FlatAppearance.BorderSize = 0;
+            this.btnVendedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVendedor.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnVendedor.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnVendedor.IconChar = FontAwesome.Sharp.IconChar.AddressCard;
+            this.btnVendedor.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnVendedor.IconSize = 32;
+            this.btnVendedor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVendedor.Location = new System.Drawing.Point(0, 240);
+            this.btnVendedor.Name = "btnVendedor";
+            this.btnVendedor.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnVendedor.Rotation = 0D;
+            this.btnVendedor.Size = new System.Drawing.Size(200, 40);
+            this.btnVendedor.TabIndex = 5;
+            this.btnVendedor.Text = "Vendedores";
+            this.btnVendedor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVendedor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnVendedor.UseVisualStyleBackColor = true;
+            this.btnVendedor.Click += new System.EventHandler(this.btnVendedor_Click);
+            // 
+            // btnCliente
+            // 
+            this.btnCliente.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCliente.FlatAppearance.BorderSize = 0;
+            this.btnCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCliente.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnCliente.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnCliente.IconChar = FontAwesome.Sharp.IconChar.AddressBook;
+            this.btnCliente.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnCliente.IconSize = 32;
+            this.btnCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCliente.Location = new System.Drawing.Point(0, 200);
+            this.btnCliente.Name = "btnCliente";
+            this.btnCliente.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnCliente.Rotation = 0D;
+            this.btnCliente.Size = new System.Drawing.Size(200, 40);
+            this.btnCliente.TabIndex = 4;
+            this.btnCliente.Text = "Clientes";
+            this.btnCliente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCliente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCliente.UseVisualStyleBackColor = true;
+            this.btnCliente.Click += new System.EventHandler(this.btnCliente_Click);
+            // 
+            // btnProducto
+            // 
+            this.btnProducto.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnProducto.FlatAppearance.BorderSize = 0;
+            this.btnProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProducto.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnProducto.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnProducto.IconChar = FontAwesome.Sharp.IconChar.Tag;
+            this.btnProducto.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnProducto.IconSize = 32;
+            this.btnProducto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProducto.Location = new System.Drawing.Point(0, 160);
+            this.btnProducto.Name = "btnProducto";
+            this.btnProducto.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnProducto.Rotation = 0D;
+            this.btnProducto.Size = new System.Drawing.Size(200, 40);
+            this.btnProducto.TabIndex = 3;
+            this.btnProducto.Text = "Productos";
+            this.btnProducto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProducto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnProducto.UseVisualStyleBackColor = true;
+            this.btnProducto.Click += new System.EventHandler(this.btnProducto_Click);
+            // 
+            // btnVenta
+            // 
+            this.btnVenta.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnVenta.FlatAppearance.BorderSize = 0;
+            this.btnVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVenta.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnVenta.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnVenta.IconChar = FontAwesome.Sharp.IconChar.ShoppingCart;
+            this.btnVenta.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnVenta.IconSize = 32;
+            this.btnVenta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVenta.Location = new System.Drawing.Point(0, 120);
+            this.btnVenta.Name = "btnVenta";
+            this.btnVenta.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnVenta.Rotation = 0D;
+            this.btnVenta.Size = new System.Drawing.Size(200, 40);
+            this.btnVenta.TabIndex = 2;
+            this.btnVenta.Text = "Venta";
+            this.btnVenta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVenta.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnVenta.UseVisualStyleBackColor = true;
+            this.btnVenta.Click += new System.EventHandler(this.btnVenta_Click);
+            // 
+            // btnContabilidad
+            // 
+            this.btnContabilidad.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnContabilidad.FlatAppearance.BorderSize = 0;
+            this.btnContabilidad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnContabilidad.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnContabilidad.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnContabilidad.IconChar = FontAwesome.Sharp.IconChar.ChartBar;
+            this.btnContabilidad.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnContabilidad.IconSize = 32;
+            this.btnContabilidad.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnContabilidad.Location = new System.Drawing.Point(0, 80);
+            this.btnContabilidad.Name = "btnContabilidad";
+            this.btnContabilidad.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnContabilidad.Rotation = 0D;
+            this.btnContabilidad.Size = new System.Drawing.Size(200, 40);
+            this.btnContabilidad.TabIndex = 1;
+            this.btnContabilidad.Text = "Contabilidad";
+            this.btnContabilidad.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnContabilidad.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnContabilidad.UseVisualStyleBackColor = true;
+            this.btnContabilidad.Click += new System.EventHandler(this.btnContabilidad_Click);
             // 
             // panelLogo
             // 
@@ -272,7 +442,7 @@
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitleBar.Location = new System.Drawing.Point(200, 0);
             this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(600, 47);
+            this.panelTitleBar.Size = new System.Drawing.Size(762, 47);
             this.panelTitleBar.TabIndex = 1;
             this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
@@ -286,7 +456,7 @@
             this.btnRestore.IconChar = FontAwesome.Sharp.IconChar.WindowRestore;
             this.btnRestore.IconColor = System.Drawing.Color.Gainsboro;
             this.btnRestore.IconSize = 25;
-            this.btnRestore.Location = new System.Drawing.Point(520, 9);
+            this.btnRestore.Location = new System.Drawing.Point(682, 9);
             this.btnRestore.Name = "btnRestore";
             this.btnRestore.Rotation = 0D;
             this.btnRestore.Size = new System.Drawing.Size(34, 29);
@@ -305,7 +475,7 @@
             this.btnMinimize.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
             this.btnMinimize.IconColor = System.Drawing.Color.Gainsboro;
             this.btnMinimize.IconSize = 25;
-            this.btnMinimize.Location = new System.Drawing.Point(480, 9);
+            this.btnMinimize.Location = new System.Drawing.Point(642, 9);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Rotation = 0D;
             this.btnMinimize.Size = new System.Drawing.Size(34, 29);
@@ -323,7 +493,7 @@
             this.btnMaximize.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
             this.btnMaximize.IconColor = System.Drawing.Color.Gainsboro;
             this.btnMaximize.IconSize = 25;
-            this.btnMaximize.Location = new System.Drawing.Point(520, 9);
+            this.btnMaximize.Location = new System.Drawing.Point(682, 9);
             this.btnMaximize.Name = "btnMaximize";
             this.btnMaximize.Rotation = 0D;
             this.btnMaximize.Size = new System.Drawing.Size(34, 29);
@@ -341,7 +511,7 @@
             this.btnClose.IconChar = FontAwesome.Sharp.IconChar.WindowClose;
             this.btnClose.IconColor = System.Drawing.Color.Gainsboro;
             this.btnClose.IconSize = 25;
-            this.btnClose.Location = new System.Drawing.Point(560, 9);
+            this.btnClose.Location = new System.Drawing.Point(722, 9);
             this.btnClose.Name = "btnClose";
             this.btnClose.Rotation = 0D;
             this.btnClose.Size = new System.Drawing.Size(31, 29);
@@ -377,7 +547,7 @@
             this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelShadow.Location = new System.Drawing.Point(200, 47);
             this.panelShadow.Name = "panelShadow";
-            this.panelShadow.Size = new System.Drawing.Size(600, 33);
+            this.panelShadow.Size = new System.Drawing.Size(762, 33);
             this.panelShadow.TabIndex = 4;
             // 
             // panelDesktop
@@ -392,63 +562,8 @@
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(200, 80);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(600, 512);
+            this.panelDesktop.Size = new System.Drawing.Size(762, 540);
             this.panelDesktop.TabIndex = 5;
-            // 
-            // chbDashboard
-            // 
-            this.chbDashboard.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.chbDashboard.AutoSize = true;
-            this.chbDashboard.Location = new System.Drawing.Point(180, 133);
-            this.chbDashboard.Name = "chbDashboard";
-            this.chbDashboard.Size = new System.Drawing.Size(78, 17);
-            this.chbDashboard.TabIndex = 0;
-            this.chbDashboard.Text = "Dashboard";
-            this.chbDashboard.UseVisualStyleBackColor = true;
-            // 
-            // chbOrders
-            // 
-            this.chbOrders.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.chbOrders.AutoSize = true;
-            this.chbOrders.Location = new System.Drawing.Point(276, 133);
-            this.chbOrders.Name = "chbOrders";
-            this.chbOrders.Size = new System.Drawing.Size(54, 17);
-            this.chbOrders.TabIndex = 1;
-            this.chbOrders.Text = "Oders";
-            this.chbOrders.UseVisualStyleBackColor = true;
-            // 
-            // chbProducts
-            // 
-            this.chbProducts.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.chbProducts.AutoSize = true;
-            this.chbProducts.Location = new System.Drawing.Point(379, 133);
-            this.chbProducts.Name = "chbProducts";
-            this.chbProducts.Size = new System.Drawing.Size(68, 17);
-            this.chbProducts.TabIndex = 2;
-            this.chbProducts.Text = "Products";
-            this.chbProducts.UseVisualStyleBackColor = true;
-            // 
-            // chbCustomers
-            // 
-            this.chbCustomers.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.chbCustomers.AutoSize = true;
-            this.chbCustomers.Location = new System.Drawing.Point(180, 202);
-            this.chbCustomers.Name = "chbCustomers";
-            this.chbCustomers.Size = new System.Drawing.Size(75, 17);
-            this.chbCustomers.TabIndex = 3;
-            this.chbCustomers.Text = "Customers";
-            this.chbCustomers.UseVisualStyleBackColor = true;
-            // 
-            // chbMarketing
-            // 
-            this.chbMarketing.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.chbMarketing.AutoSize = true;
-            this.chbMarketing.Location = new System.Drawing.Point(276, 202);
-            this.chbMarketing.Name = "chbMarketing";
-            this.chbMarketing.Size = new System.Drawing.Size(73, 17);
-            this.chbMarketing.TabIndex = 4;
-            this.chbMarketing.Text = "Marketing";
-            this.chbMarketing.UseVisualStyleBackColor = true;
             // 
             // btnEnviar
             // 
@@ -462,7 +577,7 @@
             this.btnEnviar.IconChar = FontAwesome.Sharp.IconChar.Play;
             this.btnEnviar.IconColor = System.Drawing.Color.White;
             this.btnEnviar.IconSize = 25;
-            this.btnEnviar.Location = new System.Drawing.Point(276, 240);
+            this.btnEnviar.Location = new System.Drawing.Point(357, 240);
             this.btnEnviar.Name = "btnEnviar";
             this.btnEnviar.Rotation = 0D;
             this.btnEnviar.Size = new System.Drawing.Size(54, 29);
@@ -470,11 +585,66 @@
             this.btnEnviar.UseVisualStyleBackColor = false;
             this.btnEnviar.Click += new System.EventHandler(this.btnEnviar_Click);
             // 
+            // chbMarketing
+            // 
+            this.chbMarketing.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.chbMarketing.AutoSize = true;
+            this.chbMarketing.Location = new System.Drawing.Point(357, 202);
+            this.chbMarketing.Name = "chbMarketing";
+            this.chbMarketing.Size = new System.Drawing.Size(73, 17);
+            this.chbMarketing.TabIndex = 4;
+            this.chbMarketing.Text = "Marketing";
+            this.chbMarketing.UseVisualStyleBackColor = true;
+            // 
+            // chbCustomers
+            // 
+            this.chbCustomers.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.chbCustomers.AutoSize = true;
+            this.chbCustomers.Location = new System.Drawing.Point(261, 202);
+            this.chbCustomers.Name = "chbCustomers";
+            this.chbCustomers.Size = new System.Drawing.Size(75, 17);
+            this.chbCustomers.TabIndex = 3;
+            this.chbCustomers.Text = "Customers";
+            this.chbCustomers.UseVisualStyleBackColor = true;
+            // 
+            // chbProducts
+            // 
+            this.chbProducts.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.chbProducts.AutoSize = true;
+            this.chbProducts.Location = new System.Drawing.Point(460, 133);
+            this.chbProducts.Name = "chbProducts";
+            this.chbProducts.Size = new System.Drawing.Size(68, 17);
+            this.chbProducts.TabIndex = 2;
+            this.chbProducts.Text = "Products";
+            this.chbProducts.UseVisualStyleBackColor = true;
+            // 
+            // chbOrders
+            // 
+            this.chbOrders.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.chbOrders.AutoSize = true;
+            this.chbOrders.Location = new System.Drawing.Point(357, 133);
+            this.chbOrders.Name = "chbOrders";
+            this.chbOrders.Size = new System.Drawing.Size(54, 17);
+            this.chbOrders.TabIndex = 1;
+            this.chbOrders.Text = "Oders";
+            this.chbOrders.UseVisualStyleBackColor = true;
+            // 
+            // chbDashboard
+            // 
+            this.chbDashboard.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.chbDashboard.AutoSize = true;
+            this.chbDashboard.Location = new System.Drawing.Point(261, 133);
+            this.chbDashboard.Name = "chbDashboard";
+            this.chbDashboard.Size = new System.Drawing.Size(78, 17);
+            this.chbDashboard.TabIndex = 0;
+            this.chbDashboard.Text = "Dashboard";
+            this.chbDashboard.UseVisualStyleBackColor = true;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 592);
+            this.ClientSize = new System.Drawing.Size(962, 620);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelShadow);
             this.Controls.Add(this.panelTitleBar);
@@ -499,12 +669,12 @@
 
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Panel panelLogo;
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private FontAwesome.Sharp.IconButton iconButton6;
-        private FontAwesome.Sharp.IconButton iconButton5;
-        private FontAwesome.Sharp.IconButton iconButton4;
-        private FontAwesome.Sharp.IconButton iconButton3;
-        private FontAwesome.Sharp.IconButton iconButton2;
+        private FontAwesome.Sharp.IconButton btnContabilidad;
+        private FontAwesome.Sharp.IconButton btnProveedor;
+        private FontAwesome.Sharp.IconButton btnVendedor;
+        private FontAwesome.Sharp.IconButton btnCliente;
+        private FontAwesome.Sharp.IconButton btnProducto;
+        private FontAwesome.Sharp.IconButton btnVenta;
         private System.Windows.Forms.PictureBox pbHome;
         private System.Windows.Forms.Panel panelTitleBar;
         private System.Windows.Forms.Label lblTitleChildForm;
@@ -522,5 +692,12 @@
         private System.Windows.Forms.CheckBox chbOrders;
         private System.Windows.Forms.CheckBox chbDashboard;
         private FontAwesome.Sharp.IconButton btnEnviar;
+        private FontAwesome.Sharp.IconButton btnAlmacen;
+        private FontAwesome.Sharp.IconButton btnTransporte;
+        private FontAwesome.Sharp.IconButton btnCaja;
+        private FontAwesome.Sharp.IconButton btnBanco;
+        private FontAwesome.Sharp.IconButton btnListaPrecio;
+        private FontAwesome.Sharp.IconButton btnDispositivo;
+        private FontAwesome.Sharp.IconButton btnConfiguracion;
     }
 }

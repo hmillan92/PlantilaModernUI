@@ -38,6 +38,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -61,61 +62,61 @@
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuForms\FormCustomers.cs">
+    <Compile Include="MenuForms\FormCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuForms\FormCustomers.Designer.cs">
-      <DependentUpon>FormCustomers.cs</DependentUpon>
+    <Compile Include="MenuForms\FormCliente.Designer.cs">
+      <DependentUpon>FormCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuForms\FormDashboard.cs">
+    <Compile Include="MenuForms\FormContabilidad.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuForms\FormDashboard.Designer.cs">
-      <DependentUpon>FormDashboard.cs</DependentUpon>
+    <Compile Include="MenuForms\FormContabilidad.Designer.cs">
+      <DependentUpon>FormContabilidad.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuForms\FormMarketing.cs">
+    <Compile Include="MenuForms\FormVendedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuForms\FormMarketing.Designer.cs">
-      <DependentUpon>FormMarketing.cs</DependentUpon>
+    <Compile Include="MenuForms\FormVendedor.Designer.cs">
+      <DependentUpon>FormVendedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuForms\FormOrders.cs">
+    <Compile Include="MenuForms\FormVenta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuForms\FormOrders.Designer.cs">
-      <DependentUpon>FormOrders.cs</DependentUpon>
+    <Compile Include="MenuForms\FormVenta.Designer.cs">
+      <DependentUpon>FormVenta.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuForms\FormProducts.cs">
+    <Compile Include="MenuForms\FormProducto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuForms\FormProducts.Designer.cs">
-      <DependentUpon>FormProducts.cs</DependentUpon>
+    <Compile Include="MenuForms\FormProducto.Designer.cs">
+      <DependentUpon>FormProducto.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuForms\FormSettings.cs">
+    <Compile Include="MenuForms\FormProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuForms\FormSettings.Designer.cs">
-      <DependentUpon>FormSettings.cs</DependentUpon>
+    <Compile Include="MenuForms\FormProveedor.Designer.cs">
+      <DependentUpon>FormProveedor.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="MenuForms\FormCustomers.resx">
-      <DependentUpon>FormCustomers.cs</DependentUpon>
+    <EmbeddedResource Include="MenuForms\FormCliente.resx">
+      <DependentUpon>FormCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuForms\FormDashboard.resx">
-      <DependentUpon>FormDashboard.cs</DependentUpon>
+    <EmbeddedResource Include="MenuForms\FormContabilidad.resx">
+      <DependentUpon>FormContabilidad.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuForms\FormMarketing.resx">
-      <DependentUpon>FormMarketing.cs</DependentUpon>
+    <EmbeddedResource Include="MenuForms\FormVendedor.resx">
+      <DependentUpon>FormVendedor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuForms\FormOrders.resx">
-      <DependentUpon>FormOrders.cs</DependentUpon>
+    <EmbeddedResource Include="MenuForms\FormVenta.resx">
+      <DependentUpon>FormVenta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuForms\FormProducts.resx">
-      <DependentUpon>FormProducts.cs</DependentUpon>
+    <EmbeddedResource Include="MenuForms\FormProducto.resx">
+      <DependentUpon>FormProducto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuForms\FormSettings.resx">
-      <DependentUpon>FormSettings.cs</DependentUpon>
+    <EmbeddedResource Include="MenuForms\FormProveedor.resx">
+      <DependentUpon>FormProveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuForms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

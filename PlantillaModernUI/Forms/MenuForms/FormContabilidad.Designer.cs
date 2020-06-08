@@ -1,6 +1,6 @@
 ﻿namespace Forms.MenuForms
 {
-    partial class FormSettings
+    partial class FormContabilidad
     {
         /// <summary>
         /// Required designer variable.
@@ -38,21 +38,21 @@
             this.label1.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(305, 151);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 26);
+            this.label1.Size = new System.Drawing.Size(127, 26);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Settings";
+            this.label1.Text = "Contabilidad";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // FormSettings
+            // FormContabilidad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(733, 303);
+            this.ClientSize = new System.Drawing.Size(749, 342);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormSettings";
-            this.Text = "Settings";
+            this.Name = "FormContabilidad";
+            this.Text = "Contabilidad";
             this.ResumeLayout(false);
             this.PerformLayout();
 
