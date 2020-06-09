@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Logic;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,11 +14,13 @@ namespace Forms
 {
     public partial class Login : Form
     {
+        BusinessLogic logic = new BusinessLogic();
         public Login()
         {
             InitializeComponent();
         }
 
+        #region EventsBtnClicks
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -28,23 +31,30 @@ namespace Forms
             WindowState = FormWindowState.Minimized;
         }
 
-        //DragForm
-        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-        private extern static void ReleaseCapture();
-
-        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
-        private void panelTitle_MouseDown(object sender, MouseEventArgs e)
+        private void ibtnLogin_Click(object sender, EventArgs e)
         {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
+            bool r = logic.Sesion(txtUser.Text, txtPassword.Text);
+            if (r)
+            {
+                Main main = Owner as Main;
+                main.btnConfiguracion.Visible = true;
+                main.pbHome.Enabled = true;
+                this.Close();
+            }
+            else
+            {
+                lblMsg.Text = "Invalid Credentials, Try Again!!";
+            }
         }
 
+        #endregion
+
+        #region EventsTextBox
         private void txtUser_Click(object sender, EventArgs e)
         {
             if (txtUser.Text == "User")
             {
-                txtUser.Text = String.Empty;              
+                txtUser.Text = String.Empty;
             }
         }
 
@@ -53,19 +63,6 @@ namespace Forms
             if (txtUser.Text == String.Empty)
             {
                 txtUser.Text = "User";
-            }
-        }
-
-        private void ibtnLogin_Click(object sender, EventArgs e)
-        {
-            if (txtUser.Text == "admin" && txtPassword.Text == "1")
-            {
-                this.Close();
-            }
-
-            else
-            {
-                MessageBox.Show("Invalid Credentials, Try Again");
             }
         }
 
@@ -90,5 +87,7 @@ namespace Forms
         {
             txtPassword.PasswordChar = '*';
         }
+
+        #endregion
     }
 }

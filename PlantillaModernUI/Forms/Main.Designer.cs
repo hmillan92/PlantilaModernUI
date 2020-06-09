@@ -55,18 +55,14 @@
             this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.panelShadow = new System.Windows.Forms.Panel();
             this.panelDesktop = new System.Windows.Forms.Panel();
-            this.btnEnviar = new FontAwesome.Sharp.IconButton();
-            this.chbMarketing = new System.Windows.Forms.CheckBox();
-            this.chbCustomers = new System.Windows.Forms.CheckBox();
-            this.chbProducts = new System.Windows.Forms.CheckBox();
-            this.chbOrders = new System.Windows.Forms.CheckBox();
-            this.chbDashboard = new System.Windows.Forms.CheckBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbHome)).BeginInit();
             this.panelTitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).BeginInit();
             this.panelDesktop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -113,6 +109,7 @@
             this.btnConfiguracion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnConfiguracion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnConfiguracion.UseVisualStyleBackColor = true;
+            this.btnConfiguracion.Visible = false;
             this.btnConfiguracion.Click += new System.EventHandler(this.btnConfiguracion_Click);
             // 
             // btnDispositivo
@@ -136,6 +133,7 @@
             this.btnDispositivo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDispositivo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDispositivo.UseVisualStyleBackColor = true;
+            this.btnDispositivo.Visible = false;
             this.btnDispositivo.Click += new System.EventHandler(this.btnDispositivo_Click);
             // 
             // btnListaPrecio
@@ -159,6 +157,7 @@
             this.btnListaPrecio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnListaPrecio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnListaPrecio.UseVisualStyleBackColor = true;
+            this.btnListaPrecio.Visible = false;
             this.btnListaPrecio.Click += new System.EventHandler(this.btnListaPrecio_Click);
             // 
             // btnCaja
@@ -182,6 +181,7 @@
             this.btnCaja.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCaja.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCaja.UseVisualStyleBackColor = true;
+            this.btnCaja.Visible = false;
             this.btnCaja.Click += new System.EventHandler(this.btnCaja_Click);
             // 
             // btnBanco
@@ -205,6 +205,7 @@
             this.btnBanco.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBanco.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnBanco.UseVisualStyleBackColor = true;
+            this.btnBanco.Visible = false;
             this.btnBanco.Click += new System.EventHandler(this.btnBanco_Click);
             // 
             // btnTransporte
@@ -228,6 +229,7 @@
             this.btnTransporte.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTransporte.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTransporte.UseVisualStyleBackColor = true;
+            this.btnTransporte.Visible = false;
             this.btnTransporte.Click += new System.EventHandler(this.btnTransporte_Click);
             // 
             // btnAlmacen
@@ -251,6 +253,7 @@
             this.btnAlmacen.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAlmacen.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAlmacen.UseVisualStyleBackColor = true;
+            this.btnAlmacen.Visible = false;
             this.btnAlmacen.Click += new System.EventHandler(this.btnAlmacen_Click);
             // 
             // btnProveedor
@@ -274,6 +277,7 @@
             this.btnProveedor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProveedor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnProveedor.UseVisualStyleBackColor = true;
+            this.btnProveedor.Visible = false;
             this.btnProveedor.Click += new System.EventHandler(this.btnProveedor_Click);
             // 
             // btnVendedor
@@ -297,6 +301,7 @@
             this.btnVendedor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVendedor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnVendedor.UseVisualStyleBackColor = true;
+            this.btnVendedor.Visible = false;
             this.btnVendedor.Click += new System.EventHandler(this.btnVendedor_Click);
             // 
             // btnCliente
@@ -320,6 +325,7 @@
             this.btnCliente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCliente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCliente.UseVisualStyleBackColor = true;
+            this.btnCliente.Visible = false;
             this.btnCliente.Click += new System.EventHandler(this.btnCliente_Click);
             // 
             // btnProducto
@@ -343,6 +349,7 @@
             this.btnProducto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProducto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnProducto.UseVisualStyleBackColor = true;
+            this.btnProducto.Visible = false;
             this.btnProducto.Click += new System.EventHandler(this.btnProducto_Click);
             // 
             // btnVenta
@@ -366,6 +373,7 @@
             this.btnVenta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVenta.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnVenta.UseVisualStyleBackColor = true;
+            this.btnVenta.Visible = false;
             this.btnVenta.Click += new System.EventHandler(this.btnVenta_Click);
             // 
             // btnContabilidad
@@ -389,6 +397,7 @@
             this.btnContabilidad.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnContabilidad.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnContabilidad.UseVisualStyleBackColor = true;
+            this.btnContabilidad.Visible = false;
             this.btnContabilidad.Click += new System.EventHandler(this.btnContabilidad_Click);
             // 
             // panelLogo
@@ -421,6 +430,7 @@
             // 
             // pbHome
             // 
+            this.pbHome.Enabled = false;
             this.pbHome.Image = ((System.Drawing.Image)(resources.GetObject("pbHome.Image")));
             this.pbHome.Location = new System.Drawing.Point(54, 0);
             this.pbHome.Name = "pbHome";
@@ -552,93 +562,24 @@
             // 
             // panelDesktop
             // 
-            this.panelDesktop.BackColor = System.Drawing.Color.White;
-            this.panelDesktop.Controls.Add(this.btnEnviar);
-            this.panelDesktop.Controls.Add(this.chbMarketing);
-            this.panelDesktop.Controls.Add(this.chbCustomers);
-            this.panelDesktop.Controls.Add(this.chbProducts);
-            this.panelDesktop.Controls.Add(this.chbOrders);
-            this.panelDesktop.Controls.Add(this.chbDashboard);
+            this.panelDesktop.BackColor = System.Drawing.Color.Azure;
+            this.panelDesktop.Controls.Add(this.pictureBox1);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(200, 80);
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Size = new System.Drawing.Size(762, 540);
             this.panelDesktop.TabIndex = 5;
             // 
-            // btnEnviar
+            // pictureBox1
             // 
-            this.btnEnviar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnEnviar.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnEnviar.FlatAppearance.BorderSize = 0;
-            this.btnEnviar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEnviar.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnEnviar.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEnviar.ForeColor = System.Drawing.Color.Gray;
-            this.btnEnviar.IconChar = FontAwesome.Sharp.IconChar.Play;
-            this.btnEnviar.IconColor = System.Drawing.Color.White;
-            this.btnEnviar.IconSize = 25;
-            this.btnEnviar.Location = new System.Drawing.Point(357, 240);
-            this.btnEnviar.Name = "btnEnviar";
-            this.btnEnviar.Rotation = 0D;
-            this.btnEnviar.Size = new System.Drawing.Size(54, 29);
-            this.btnEnviar.TabIndex = 6;
-            this.btnEnviar.UseVisualStyleBackColor = false;
-            this.btnEnviar.Click += new System.EventHandler(this.btnEnviar_Click);
-            // 
-            // chbMarketing
-            // 
-            this.chbMarketing.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.chbMarketing.AutoSize = true;
-            this.chbMarketing.Location = new System.Drawing.Point(357, 202);
-            this.chbMarketing.Name = "chbMarketing";
-            this.chbMarketing.Size = new System.Drawing.Size(73, 17);
-            this.chbMarketing.TabIndex = 4;
-            this.chbMarketing.Text = "Marketing";
-            this.chbMarketing.UseVisualStyleBackColor = true;
-            // 
-            // chbCustomers
-            // 
-            this.chbCustomers.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.chbCustomers.AutoSize = true;
-            this.chbCustomers.Location = new System.Drawing.Point(261, 202);
-            this.chbCustomers.Name = "chbCustomers";
-            this.chbCustomers.Size = new System.Drawing.Size(75, 17);
-            this.chbCustomers.TabIndex = 3;
-            this.chbCustomers.Text = "Customers";
-            this.chbCustomers.UseVisualStyleBackColor = true;
-            // 
-            // chbProducts
-            // 
-            this.chbProducts.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.chbProducts.AutoSize = true;
-            this.chbProducts.Location = new System.Drawing.Point(460, 133);
-            this.chbProducts.Name = "chbProducts";
-            this.chbProducts.Size = new System.Drawing.Size(68, 17);
-            this.chbProducts.TabIndex = 2;
-            this.chbProducts.Text = "Products";
-            this.chbProducts.UseVisualStyleBackColor = true;
-            // 
-            // chbOrders
-            // 
-            this.chbOrders.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.chbOrders.AutoSize = true;
-            this.chbOrders.Location = new System.Drawing.Point(357, 133);
-            this.chbOrders.Name = "chbOrders";
-            this.chbOrders.Size = new System.Drawing.Size(54, 17);
-            this.chbOrders.TabIndex = 1;
-            this.chbOrders.Text = "Oders";
-            this.chbOrders.UseVisualStyleBackColor = true;
-            // 
-            // chbDashboard
-            // 
-            this.chbDashboard.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.chbDashboard.AutoSize = true;
-            this.chbDashboard.Location = new System.Drawing.Point(261, 133);
-            this.chbDashboard.Name = "chbDashboard";
-            this.chbDashboard.Size = new System.Drawing.Size(78, 17);
-            this.chbDashboard.TabIndex = 0;
-            this.chbDashboard.Text = "Dashboard";
-            this.chbDashboard.UseVisualStyleBackColor = true;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(762, 540);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // Main
             // 
@@ -660,7 +601,7 @@
             this.panelTitleBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).EndInit();
             this.panelDesktop.ResumeLayout(false);
-            this.panelDesktop.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -675,7 +616,6 @@
         private FontAwesome.Sharp.IconButton btnCliente;
         private FontAwesome.Sharp.IconButton btnProducto;
         private FontAwesome.Sharp.IconButton btnVenta;
-        private System.Windows.Forms.PictureBox pbHome;
         private System.Windows.Forms.Panel panelTitleBar;
         private System.Windows.Forms.Label lblTitleChildForm;
         private FontAwesome.Sharp.IconPictureBox iconCurrentChildForm;
@@ -686,18 +626,14 @@
         private FontAwesome.Sharp.IconButton btnMinimize;
         private FontAwesome.Sharp.IconButton btnMaximize;
         private FontAwesome.Sharp.IconButton btnClose;
-        private System.Windows.Forms.CheckBox chbMarketing;
-        private System.Windows.Forms.CheckBox chbCustomers;
-        private System.Windows.Forms.CheckBox chbProducts;
-        private System.Windows.Forms.CheckBox chbOrders;
-        private System.Windows.Forms.CheckBox chbDashboard;
-        private FontAwesome.Sharp.IconButton btnEnviar;
         private FontAwesome.Sharp.IconButton btnAlmacen;
         private FontAwesome.Sharp.IconButton btnTransporte;
         private FontAwesome.Sharp.IconButton btnCaja;
         private FontAwesome.Sharp.IconButton btnBanco;
         private FontAwesome.Sharp.IconButton btnListaPrecio;
         private FontAwesome.Sharp.IconButton btnDispositivo;
-        private FontAwesome.Sharp.IconButton btnConfiguracion;
+        public FontAwesome.Sharp.IconButton btnConfiguracion;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.PictureBox pbHome;
     }
 }

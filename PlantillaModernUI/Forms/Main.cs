@@ -31,7 +31,11 @@ namespace Forms
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7, 40);
             panelMenu.Controls.Add(leftBorderBtn);
-            OpenChildForm(new Login());
+            //OpenChildForm(new Login());
+            Login formLogin = new Login();
+            AddOwnedForm(formLogin);
+            OpenChildForm(formLogin);
+            //formLogin.Show();
         }
 
         #endregion
@@ -47,7 +51,7 @@ namespace Forms
             public static Color color6 = Color.FromArgb(24, 161, 251);
             public static Color color7 = Color.FromArgb(255, 87, 51);
             public static Color color8 = Color.FromArgb(153, 137, 133);
-            public static Color color9 = Color.FromArgb(192, 201, 247);
+            public static Color color9 = Color.FromArgb(32, 249, 52);
             public static Color color10 = Color.FromArgb(249, 249, 8);
             public static Color color11 = Color.FromArgb(0, 250, 246);
             public static Color color12 = Color.FromArgb(250, 0, 42);
@@ -187,43 +191,43 @@ namespace Forms
             btnMaximize.Visible = true;
         }
 
-        private void btnEnviar_Click(object sender, EventArgs e)
-        {
-            List<CheckBox> checkedList = new List<CheckBox>();
-            checkedList.Add(chbDashboard);
-            checkedList.Add(chbOrders);
-            checkedList.Add(chbProducts);
-            checkedList.Add(chbCustomers);
-            checkedList.Add(chbMarketing);
+        //private void btnEnviar_Click(object sender, EventArgs e)
+        //{
+        //    List<CheckBox> checkedList = new List<CheckBox>();
+        //    checkedList.Add(chbDashboard);
+        //    checkedList.Add(chbOrders);
+        //    checkedList.Add(chbProducts);
+        //    checkedList.Add(chbCustomers);
+        //    checkedList.Add(chbMarketing);
 
-            List<Button> button = new List<Button>();
-            button.Add(btnContabilidad);
-            button.Add(btnVenta);
-            button.Add(btnProducto);
-            button.Add(btnCliente);
-            button.Add(btnVendedor);
+        //    List<Button> button = new List<Button>();
+        //    button.Add(btnContabilidad);
+        //    button.Add(btnVenta);
+        //    button.Add(btnProducto);
+        //    button.Add(btnCliente);
+        //    button.Add(btnVendedor);
 
-            int count = 0;
+        //    int count = 0;
 
-            foreach (var item in checkedList)
-            {
+        //    foreach (var item in checkedList)
+        //    {
                 
-                if (item.Checked == true)
-                {
+        //        if (item.Checked == true)
+        //        {
 
-                    Button a = (Button)button.ElementAt(count);
-                    a.Visible = true;
-                    count++;
-                }
+        //            Button a = (Button)button.ElementAt(count);
+        //            a.Visible = true;
+        //            count++;
+        //        }
 
-                else
-                {
-                    Button a = (Button)button.ElementAt(count);
-                    a.Visible = false;
-                    count++;
-                }                          
-            }          
-        }
+        //        else
+        //        {
+        //            Button a = (Button)button.ElementAt(count);
+        //            a.Visible = false;
+        //            count++;
+        //        }                          
+        //    }          
+        //}
 
         private void btnContabilidad_Click(object sender, EventArgs e)
         {
@@ -294,6 +298,7 @@ namespace Forms
         private void btnConfiguracion_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color13);
+            OpenChildForm(new FormConfiguracion());
         }
 
         private void btnBars_Click(object sender, EventArgs e)
